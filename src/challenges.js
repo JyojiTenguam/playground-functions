@@ -12,7 +12,11 @@ function splitSentence(string) {
   return countWords;
 }
 // Requisito 2 - Crie uma função que calcula a quantidade de pontos em um campeonato de futebol
+function footballPoints(wins, ties) {
+  const points = wins * 3 + ties;
 
+  return points;
+}
 // Requisito 3 - Crie uma função que adiciona músicas em uma playlist
 
 // =================================================
