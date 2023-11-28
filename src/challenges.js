@@ -6,7 +6,11 @@ const guestsDatabase = require('./data.json');
 // =================================================
 
 // Requisito 1 - Crie uma função que divida uma frase
+function splitSentence(string) {
+  const countWords = string.split(' ');
 
+  return countWords;
+}
 // Requisito 2 - Crie uma função que calcula a quantidade de pontos em um campeonato de futebol
 
 // Requisito 3 - Crie uma função que adiciona músicas em uma playlist
@@ -35,15 +39,15 @@ const guestsDatabase = require('./data.json');
 
 // Não modifique as linhas abaixo
 module.exports = {
-  splitSentence: typeof splitSentence === 'function' ? splitSentence : (() => {}),
-  footballPoints: typeof footballPoints === 'function' ? footballPoints : (() => {}),
-  addMusics: typeof addMusics === 'function' ? addMusics : (() => {}),
+  splitSentence: typeof splitSentence === 'function' ? splitSentence : (() => { }),
+  footballPoints: typeof footballPoints === 'function' ? footballPoints : (() => { }),
+  addMusics: typeof addMusics === 'function' ? addMusics : (() => { }),
   playlist: typeof playlist === 'undefined' ? [] : playlist,
-  moreExpensive: typeof moreExpensive === 'function' ? moreExpensive : (() => {}),
-  checkItem: typeof checkItem === 'function' ? checkItem : (() => {}),
-  addNewItem: typeof addNewItem === 'function' ? addNewItem : (() => {}),
-  counterGender: typeof counterGender === 'function' ? counterGender : (() => {}),
-  filterState: typeof filterState === 'function' ? filterState : (() => {}),
-  changePicture: typeof changePicture === 'function' ? changePicture : (() => {}),
-  generateReport: typeof generateReport === 'function' ? generateReport : (() => {}),
+  moreExpensive: typeof moreExpensive === 'function' ? moreExpensive : (() => { }),
+  checkItem: typeof checkItem === 'function' ? checkItem : (() => { }),
+  addNewItem: typeof addNewItem === 'function' ? addNewItem : (() => { }),
+  counterGender: typeof counterGender === 'function' ? counterGender : (() => { }),
+  filterState: typeof filterState === 'function' ? filterState : (() => { }),
+  changePicture: typeof changePicture === 'function' ? changePicture : (() => { }),
+  generateReport: typeof generateReport === 'function' ? generateReport : (() => { }),
 };
