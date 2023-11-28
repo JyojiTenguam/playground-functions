@@ -17,8 +17,24 @@ function footballPoints(wins, ties) {
 
   return points;
 }
-// Requisito 3 - Crie uma função que adiciona músicas em uma playlist
+/* Requisito 3 - Crie uma função que adiciona músicas em uma playlist
+function addMusics(artistName, musicName, musicTime, playlist) {
+  // Se o array playlist não existe, inicializa como um array vazio
+  if (!playlist) {
+    playlist = [];
+  }
 
+  const musicObject = {
+    artist: artistName,
+    music: musicName,
+    musicTime: musicTime
+  };
+
+  playlist.push(musicObject);
+
+  return playlist;
+}
+*/
 // =================================================
 // PARTE 2
 // =================================================
@@ -26,7 +42,17 @@ function footballPoints(wins, ties) {
 // Requisito 4 - Crie uma função que retorna o produto mais caro de acordo com uma categoria
 
 // Requisito 5 - Crie uma função que verifica se um determinado item já existe
+function checkItem(data, category, item) {
+  // Verifica se a categoria existe na base de dados
+  if (!(category in data)) {
+    return false;
+  }
 
+  // Verifica se o item existe na categoria
+  const itemExists = data[category].some(product => product.name === item);
+
+  return itemExists;
+}
 // Requisito 6 - Crie uma função que adiciona um novo item caso ele ainda não exista
 
 // Requisito 7 - Crie uma função que conta a quantidade de pessoas por gênero
