@@ -17,24 +17,23 @@ function footballPoints(wins, ties) {
 
   return points;
 }
-/* Requisito 3 - Crie uma função que adiciona músicas em uma playlist
-function addMusics(artistName, musicName, musicTime, playlist) {
-  // Se o array playlist não existe, inicializa como um array vazio
-  if (!playlist) {
-    playlist = [];
-  }
+// Requisito 3 - Crie uma função que adiciona músicas em uma playlist
+const playlist = [];
 
-  const musicObject = {
+function addMusics(artistName, musicName, musicTime) {
+  // Cria um objeto com as informações da música
+  const music = {
     artist: artistName,
     music: musicName,
-    musicTime: musicTime
+    musicTime: musicTime,
   };
 
-  playlist.push(musicObject);
+  // Adiciona o objeto à playlist
+  playlist.push(music);
 
   return playlist;
 }
-*/
+
 // =================================================
 // PARTE 2
 // =================================================
