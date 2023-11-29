@@ -63,7 +63,7 @@ function checkItem(data, category, item) {
   }
 
   // Verifica se o item existe na categoria
-  const itemExists = data[category].some(product => product.name === item);
+  const itemExists = data[category].some((product) => product.name === item);
 
   return itemExists;
 }
@@ -87,7 +87,6 @@ function counterGender(data) {
 
   return { male: maleCount, female: femaleCount };
 }
-console.log(counterGender(guestsDatabase));
 // =================================================
 // PARTE 3
 // =================================================
@@ -100,7 +99,21 @@ function filterState(data, state) {
   return filteredData;
 }
 // Requisito 9 - Crie uma função que altera a propriedade `picture`
+function changePicture(data, link) {
+  // Mapeia sobre todos os elementos da base de dados
+  const newData = data.guests.map((item) => {
+    // Cria um novo objeto para evitar modificar o original
+    const newItem = { ...item };
 
+    // Altera a propriedade "picture" para o novo link
+    newItem.picture = link;
+
+    // Retorna o novo objeto
+    return newItem;
+  });
+
+  return newData;
+}
 // Requisito 10 - Crie um função que gera um relatório
 
 // Não modifique as linhas abaixo
