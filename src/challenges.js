@@ -70,13 +70,13 @@ function checkItem(data, category, item) {
 // Requisito 6 - Crie uma função que adiciona um novo item caso ele ainda não exista
 
 // Requisito 7 - Crie uma função que conta a quantidade de pessoas por gênero
-/*
+
 function counterGender(data) {
   let maleCount = 0;
   let femaleCount = 0;
 
-  for (let index = 0; index < data.length; index += 1) {
-    const person = data[index];
+  for (let index = 0; index < data.guests.length; index += 1) {
+    const person = data.guests[index];
 
     if (person.gender === 'male') {
       maleCount += 1;
@@ -87,7 +87,7 @@ function counterGender(data) {
 
   return { male: maleCount, female: femaleCount };
 }
-*/
+console.log(counterGender(guestsDatabase));
 // =================================================
 // PARTE 3
 // =================================================
