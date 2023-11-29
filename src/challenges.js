@@ -43,8 +43,8 @@ function moreExpensive(data, category) {
   let mostExpensiveProduct = null;
   const products = data[category]; // Assuming data is an object with categories and each category has an array of products
 
-  for (let i = 0; i < products.length; i++) {
-    const product = products[i];
+  for (let index = 0; index < products.length; index += 1) {
+    const product = products[index];
 
     if (!mostExpensiveProduct || product.price > mostExpensiveProduct.price) {
       mostExpensiveProduct = product;
@@ -70,13 +70,35 @@ function checkItem(data, category, item) {
 // Requisito 6 - Crie uma função que adiciona um novo item caso ele ainda não exista
 
 // Requisito 7 - Crie uma função que conta a quantidade de pessoas por gênero
+/*
+function counterGender(data) {
+  let maleCount = 0;
+  let femaleCount = 0;
 
+  for (let index = 0; index < data.length; index += 1) {
+    const person = data[index];
+
+    if (person.gender === 'male') {
+      maleCount += 1;
+    } else if (person.gender === 'female') {
+      femaleCount += 1;
+    }
+  }
+
+  return { male: maleCount, female: femaleCount };
+}
+*/
 // =================================================
 // PARTE 3
 // =================================================
 
 // Requisito 8 - Crie uma função que retorna os elementos de um determinado estado
+function filterState(data, state) {
+  // Filtra os elementos com o estado desejado
+  const filteredData = data.guests.filter((element) => element.address.state === state);
 
+  return filteredData;
+}
 // Requisito 9 - Crie uma função que altera a propriedade `picture`
 
 // Requisito 10 - Crie um função que gera um relatório
