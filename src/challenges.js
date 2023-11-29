@@ -115,6 +115,39 @@ function changePicture(data, link) {
   return newData;
 }
 // Requisito 10 - Crie um função que gera um relatório
+// Função para calcular a média de idade
+function calculateAverageAge(data) {
+  const totalAge = data.guests.reduce((acc, person) => acc + person.age, 0);
+  return totalAge / data.guests.length;
+}
+
+// Função para gerar o relatório
+function generateReport(data) {
+  // Calcula o total de convidados
+  const totalGuests = data.guests.length;
+
+  // Calcula a quantidade de pessoas por gênero
+  const totalGender = data.guests.reduce((acc, person) => {
+    acc[person.gender] = (acc[person.gender] || 0) + 1;
+    return acc;
+  }, {});
+
+  // Calcula a média de idade com 2 casas decimais
+  const avgAge = calculateAverageAge(data);
+
+  // Obtém a lista de países sem repetições e ordenada
+  const countries = [...new Set(data.guests.map((person) => person.country))].sort();
+
+  // Cria o objeto de relatório
+  const report = {
+    totalGuests,
+    totalGender,
+    avgAge: Number(avgAge.toFixed(2)),
+    countries,
+  };
+
+  return report;
+}
 
 // Não modifique as linhas abaixo
 module.exports = {
