@@ -25,7 +25,7 @@ function addMusics(artistName, musicName, musicTime) {
   const music = {
     artist: artistName,
     music: musicName,
-    musicTime: musicTime,
+    musicTime,
   };
 
   // Adiciona o objeto à playlist
@@ -51,6 +51,7 @@ function moreExpensive(data, category) {
     }
   }
 
+  // eslint-disable-next-line max-len
   const outputString = `O produto mais caro é: ${mostExpensiveProduct.name}, que custa: R$${mostExpensiveProduct.price.toFixed(2)}.`;
 
   return outputString;
@@ -76,9 +77,9 @@ const addNewItem = (data, category, item, price, ingredients, calories) => {
   } else {
     const newItem = {
       name: item,
-      price: price,
-      ingredients: ingredients,
-      calories: calories,
+      price,
+      ingredients,
+      calories,
     }
 
     data[category].push(newItem);
