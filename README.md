@@ -53,4 +53,4 @@ npm install
 
 ## 👤 Autor
 
-Este projeto foi desenvolvido por alunos da Trybe como parte do curso de Desenvolvimento Web – Turma 39.
+Este projeto foi desenvolvido como parte do curso de Desenvolvimento Web da Trybe, por Jyoji Tenguam.
