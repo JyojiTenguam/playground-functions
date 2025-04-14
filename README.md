@@ -38,13 +38,13 @@ Essas funções foram validadas com testes automatizados utilizando a biblioteca
 1. Clone o repositório:
 
 ```bash
-
+git clone https://github.com/JyojiTenguam/playground-functions.git
 ```
 
 2. Acesse a pasta do projeto
 
 ```bash
-
+cd playground-functions
 ```
 3. Instale as dependências
 ```bash
