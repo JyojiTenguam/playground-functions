@@ -8,12 +8,11 @@ Funções criadas para praticar lógica de programação com JavaScript puro, co
 
 ## 📋 Índice
 
-- [Sobre](#-sobre)
-- [Habilidades desenvolvidas](#-habilidades-desenvolvidas)
-- [Tecnologias utilizadas](#-tecnologias-utilizadas)
-- [Como rodar o projeto](#-como-rodar-o-projeto)
-- [Testes](#-testes)
-- [Autor](#-autor)
+- [Sobre](#sobre)
+- [Habilidades desenvolvidas](#habilidades-desenvolvidas)
+- [Tecnologias utilizadas](#tecnologias-utilizadas)
+- [Como rodar o projeto](#como-rodar-o-projeto)
+- [Autor](#autor)
 
 ## 💡 Sobre
 
