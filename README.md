@@ -46,7 +46,9 @@ git clone https://github.com/JyojiTenguam/playground-functions.git
 ```bash
 cd playground-functions
 ```
+
 3. Instale as dependências
+
 ```bash
 npm install
 ```
